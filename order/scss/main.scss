@@ -1,0 +1,237 @@
+/**********************color************************/
+$color-one: #f0bd40;
+$color-two: #ffffff;
+$color-three: rgba(175, 175, 175, 0.45);
+$color-four: #000;
+$color-five: #101010;
+/**************************iconStyle*********************/
+@mixin mask-image($url) {
+  mask-image: url($url);
+  -webkit-mask-image: url($url);
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  mask: {
+    repeat: no-repeat;
+    size: 100%;
+    position: center;
+  }
+  -webkit-mask: {
+    repeat: no-repeat;
+    size: 100%;
+    position: center;
+  }
+
+  vertical-align: sub;
+
+  &.icon-pazza {
+    @include mask-image("../images/logo1.png");
+
+  }
+
+
+  &.icon-lg {
+    width: 120px;
+    height: 120px;
+  }
+
+  &.icon-white {
+    background-color: $color-two;
+  }
+}
+
+/**********************mainStyle*******************/
+
+body {
+  header {
+    padding-top: 200px;
+    background-image: url("../images/orderback.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -100px;
+
+    .container {
+
+      nav.navbar {
+        position: fixed;
+        background-color: rgba(128, 128, 128, 0.27);
+        z-index: 10;
+        top: 0;
+
+
+        h1 {
+          font-family: 'Dancing Script', cursive;
+          font-size: 50px;
+          cursor: unset;
+        }
+
+
+        .collapse {
+          ul {
+            margin-left: 275px;
+
+            li {
+              a {
+                font-size: 25px;
+                font-family: monospace;
+                color: $color-two;
+                font-weight: 700;
+
+
+                &:hover {
+                  color: $color-one;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-family: 'Dancing Script', cursive;
+        color: $color-two;
+        font-size: 100px;
+        text-align: center;
+
+
+      }
+    }
+  }
+  .container{
+    .row{
+      .col-md-4{
+        margin-top: 50px;
+        .btn{
+          background-color: $color-one;
+        }
+        .btn:hover{
+          color: white;
+        }
+        h1{
+          font-family: "Dancing Script";
+          font-weight: bold;
+        }
+        p{
+          b{
+            color: red;
+            font-family: "Dancing Script";
+          }
+        }
+      }
+      .col-md-8{
+        img{
+          width: 400px;
+          margin-left: 240px;
+          box-shadow: black;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .container{
+    margin-top: 50px;
+    h3{
+      font-family: sans-serif;
+    }
+    .btn:hover{
+      background-color: $color-one;
+      color: white;
+    }
+  }
+  footer {
+    &.footer1 {
+
+      background-color: $color-four;
+      height: 440px;
+      border-bottom: 3px solid $color-two;
+
+      .container {
+        .row {
+          .col-md-3:nth-child(1) {
+            .d-flex {
+              h1 {
+
+                font-family: 'Dancing Script', cursive;
+                font-size: 50px;
+              }
+            }
+
+            .text-8 {
+              color: $color-two;
+              font-weight: lighter;
+              margin-left: 10px;
+            }
+          }
+
+          .col-md-3:nth-child(2) {
+            .text-9 {
+              color: $color-two;
+            }
+
+            .text-10 {
+              color: $color-two;
+              font-weight: 100;
+            }
+
+            .text-11 {
+              color: $color-two;
+              margin-top: 85px;
+
+            }
+
+            a {
+              .text-12 {
+                color: $color-two;
+                font-size: 25px;
+                margin-top: 15px;
+
+                &:hover {
+                  color: $color-one;
+                }
+              }
+            }
+          }
+
+          .col-md-3:nth-child(3) {
+            .text-9 {
+              color: $color-two;
+            }
+
+            .text-10 {
+              color: $color-two;
+              font-weight: 100;
+            }
+
+            .text-11 {
+              color: $color-two;
+              margin-top: 85px;
+
+            }
+
+            .text-14 {
+              color: $color-one;
+              font-weight: lighter;
+            }
+          }
+
+          .col-md-3:nth-child(4) {
+            .text-9 {
+              color: $color-two;
+            }
+
+            .text-10 {
+              color: $color-two;
+              font-weight: 100;
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}

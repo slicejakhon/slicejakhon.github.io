@@ -1,0 +1,120 @@
+/**********************color************************/
+/**************************iconStyle*********************/
+.icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  vertical-align: sub; }
+  .icon.icon-pazza {
+    mask-image: url("../images/logo1.png");
+    -webkit-mask-image: url("../images/logo1.png"); }
+  .icon.icon-lg {
+    width: 120px;
+    height: 120px; }
+  .icon.icon-white {
+    background-color: #ffffff; }
+
+/**********************mainStyle*******************/
+body header {
+  padding-top: 200px;
+  background-image: url("../images/orderback.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -100px; }
+  body header .container nav.navbar {
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.27);
+    z-index: 10;
+    top: 0; }
+    body header .container nav.navbar h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 50px;
+      cursor: unset; }
+    body header .container nav.navbar .collapse ul {
+      margin-left: 275px; }
+      body header .container nav.navbar .collapse ul li a {
+        font-size: 25px;
+        font-family: monospace;
+        color: #ffffff;
+        font-weight: 700; }
+        body header .container nav.navbar .collapse ul li a:hover {
+          color: #f0bd40; }
+  body header .container h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center; }
+body .container .row .col-md-4 {
+  margin-top: 50px; }
+  body .container .row .col-md-4 .btn {
+    background-color: #f0bd40; }
+  body .container .row .col-md-4 .btn:hover {
+    color: white; }
+  body .container .row .col-md-4 h1 {
+    font-family: "Dancing Script";
+    font-weight: bold; }
+  body .container .row .col-md-4 p b {
+    color: red;
+    font-family: "Dancing Script"; }
+body .container .row .col-md-8 img {
+  width: 400px;
+  margin-left: 240px;
+  box-shadow: black;
+  border-radius: 15px; }
+body .container {
+  margin-top: 50px; }
+  body .container h3 {
+    font-family: sans-serif; }
+  body .container .btn:hover {
+    background-color: #f0bd40;
+    color: white; }
+body footer.footer1 {
+  background-color: #000;
+  height: 440px;
+  border-bottom: 3px solid #ffffff; }
+  body footer.footer1 .container .row .col-md-3:nth-child(1) .d-flex h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px; }
+  body footer.footer1 .container .row .col-md-3:nth-child(1) .text-8 {
+    color: #ffffff;
+    font-weight: lighter;
+    margin-left: 10px; }
+  body footer.footer1 .container .row .col-md-3:nth-child(2) .text-9 {
+    color: #ffffff; }
+  body footer.footer1 .container .row .col-md-3:nth-child(2) .text-10 {
+    color: #ffffff;
+    font-weight: 100; }
+  body footer.footer1 .container .row .col-md-3:nth-child(2) .text-11 {
+    color: #ffffff;
+    margin-top: 85px; }
+  body footer.footer1 .container .row .col-md-3:nth-child(2) a .text-12 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 15px; }
+    body footer.footer1 .container .row .col-md-3:nth-child(2) a .text-12:hover {
+      color: #f0bd40; }
+  body footer.footer1 .container .row .col-md-3:nth-child(3) .text-9 {
+    color: #ffffff; }
+  body footer.footer1 .container .row .col-md-3:nth-child(3) .text-10 {
+    color: #ffffff;
+    font-weight: 100; }
+  body footer.footer1 .container .row .col-md-3:nth-child(3) .text-11 {
+    color: #ffffff;
+    margin-top: 85px; }
+  body footer.footer1 .container .row .col-md-3:nth-child(3) .text-14 {
+    color: #f0bd40;
+    font-weight: lighter; }
+  body footer.footer1 .container .row .col-md-3:nth-child(4) .text-9 {
+    color: #ffffff; }
+  body footer.footer1 .container .row .col-md-3:nth-child(4) .text-10 {
+    color: #ffffff;
+    font-weight: 100; }
+
+/*# sourceMappingURL=main.css.map */
